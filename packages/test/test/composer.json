@@ -1,0 +1,23 @@
+{
+    "name": "test/test",
+    "description": "description",
+    "minimum-stability": "stable",
+    "license": "MIT",
+    "require": {
+    },
+    "autoload" : {
+        "psr-4": {
+            "Test\\Test\\" : "src/"
+        }
+    },
+    "extra" : {
+        "laravel" : {
+            "providers" : [
+                "Test\\Test\\TestServiceProvider"
+            ],
+            "aliases" : {
+                "cart": "Test\\Test\\Facades\\Cart"
+            }
+        }
+    }
+}
